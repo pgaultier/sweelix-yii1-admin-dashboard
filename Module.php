@@ -45,14 +45,9 @@ class Module extends BaseModule {
 	 */
 	protected function init() {
 		$this->basePath = __DIR__;
-		\Yii::app()->setComponents(array(
-			'messages' => array(
-				'class' => 'CGettextMessageSource',
-				'basePath' => $this->basePath.DIRECTORY_SEPARATOR.'messages',
-			),
-		));
+		\Yii::setPathOfAlias($this->getShortId(), __DIR__);
+		\Yii::app()->getMessages()->extensionPaths[$this->getShortId()] = $this->getShortId().'.messages';
 		parent::init();
-
 	}
 	private $_cacheId;
 	/**
