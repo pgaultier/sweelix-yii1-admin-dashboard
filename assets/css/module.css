@@ -1,0 +1,4 @@
+.module-dashboard {
+	background-image:url(../img/dashboard@2x.png);
+	background-image:url(../img/dashboard.png)\9;// css hack
+}
