@@ -1,0 +1,30 @@
+{
+	"name" : "sweelix/yii1-admin-dashboard",
+	"description" : "PHP 5.4+ Sweelix CMS  basic dashboard",
+	"type" : "library",
+	"keywords" : [ "sweelix", "yii", "cms", "back office", "dashboard" ],
+	"license" : "BSD-3-Clause",
+	"authors" : [ {
+	"name" : "Philippe Gaultier",
+		"email" : "pgaultier@sweelix.net"
+	} ],
+	"require" : {
+		"php" : ">=5.4.0",
+		"yiisoft/yii" : "=1.1.14",
+		"sweelix/yii1" : "*",
+		"sweelix/yii1-cmsext" : "*",
+		"sweelix/yii1-admin-dashboard" : "*"
+	},
+	"require-dev" : {
+		"php" : ">=5.4.0",
+		"yiisoft/yii" : "=1.1.14",
+		"sweelix/yii1" : "dev-devel",
+		"sweelix/yii1-cmsext" : "dev-devel",
+		"sweelix/yii1-admin-dashboard" : "dev-devel"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"sweelix\\yii1\\admin\\dashboard\\" : ""
+		}
+	}
+}
