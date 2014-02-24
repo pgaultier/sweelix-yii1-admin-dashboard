@@ -65,47 +65,47 @@ use sweelix\yii1\web\helpers\Html;
 				<table>
 					<thead>
 						<tr>
-							<th colspan="2"><?php echo Yii::t('DashboardModule.sweelix', 'Special operations'); ?></th>
+							<th colspan="2"><?php echo Yii::t('dashboard', 'Special operations'); ?></th>
 						</tr>
 					</thead>
 					<tbody>
 						<?php $status = ($this->getModule()->getCache() === null)?false:true; ?>
 						<?php echo Html::openTag('tr', array('class' => ($status?'success':'danger'))); ?>
-							<td><?php echo Yii::t('DashboardModule.sweelix', 'Cache')?></td>
+							<td><?php echo Yii::t('dashboard', 'Cache')?></td>
 							<?php if($status == true): ?>
 								<td style="text-align:center">
 									<?php echo Html::link(
-											Html::tag('span', array('class' => 'icon-refresh light'), Yii::t('DashboardModule.sweelix', 'flush'), true),
+											Html::tag('span', array('class' => 'icon-refresh light'), Yii::t('dashboard', 'flush'), true),
 											Html::raiseAjaxRefreshUrl(null, array('flushCache')),
 											array('class' => 'success button')
 									); ?>
 								</td>
 							<?php else: ?>
 								<td style="text-align:center">
-									<?php echo Yii::t('DashboardModule.sweelix', 'Cache cannot be flushed'); ?>
+									<?php echo Yii::t('dashboard', 'Cache cannot be flushed'); ?>
 								</td>
 							<?php endif; ?>
 						</tr>
 						<?php $status = ($procedures['spFlushUrl'] == true)?true:false; ?>
 						<?php echo Html::openTag('tr', array('class' => ($status?'success':'danger'))); ?>
-							<td><?php echo Yii::t('DashboardModule.sweelix', 'URLs')?></td>
+							<td><?php echo Yii::t('dashboard', 'URLs')?></td>
 							<?php if($status == true): ?>
 							<td style="text-align:center">
 								<?php echo Html::link(
-										Html::tag('span', array('class' => 'icon-refresh light'), Yii::t('DashboardModule.sweelix', 'flush'), true),
+										Html::tag('span', array('class' => 'icon-refresh light'), Yii::t('dashboard', 'flush'), true),
 										Html::raiseAjaxRefreshUrl(null, array('flushUrl')),
 										array('class' => 'success button small')
 								); ?>
 							</td>
 							<?php else: ?>
-							<td><?php echo Yii::t('DashboardModule.sweelix', 'URLs cannot be flushed'); ?></td>
+							<td><?php echo Yii::t('dashboard', 'URLs cannot be flushed'); ?></td>
 							<?php endif; ?>
 						</tr>
 						<?php echo Html::openTag('tr', array('class' =>'success')); ?>
-							<td><?php echo Yii::t('DashboardModule.sweelix', 'Indexer')?></td>
+							<td><?php echo Yii::t('dashboard', 'Indexer')?></td>
 							<td style="text-align:center">
 								<?php echo Html::link(
-										Html::tag('span', array('class' => 'icon-refresh light'), Yii::t('DashboardModule.sweelix', 'flush'), true),
+										Html::tag('span', array('class' => 'icon-refresh light'), Yii::t('dashboard', 'flush'), true),
 										Html::raiseAjaxRefreshUrl(null, array('reindex')),
 										array('class' => 'success button small')
 								); ?>
@@ -118,14 +118,14 @@ use sweelix\yii1\web\helpers\Html;
 				<table>
 					<thead>
 						<tr>
-							<th colspan="3"><?php echo Yii::t('DashboardModule.sweelix', 'Sweelix stored procedures'); ?></th>
+							<th colspan="3"><?php echo Yii::t('dashboard', 'Sweelix stored procedures'); ?></th>
 						</tr>
 					</thead>
 					<tbody>
 						<?php foreach($procedures as $name => $status): ?>
 						<?php echo Html::openTag('tr', array('class' => ($status?'success':'danger'))); ?>
-							<td><?php echo $status?Yii::t('DashboardModule.sweelix', 'OK'):Yii::t('sweelix', 'KO') ?></td>
-							<td><?php echo Yii::t('DashboardModule.sweelix', 'Proc')?></td>
+							<td><?php echo $status?Yii::t('dashboard', 'OK'):Yii::t('dashboard', 'KO') ?></td>
+							<td><?php echo Yii::t('dashboard', 'Proc')?></td>
 							<td><?php echo $name ?></td>
 						</tr>
 						<?php endforeach; ?>
@@ -136,14 +136,14 @@ use sweelix\yii1\web\helpers\Html;
 				<table>
 					<thead>
 						<tr>
-							<th colspan="3"><?php echo Yii::t('DashboardModule.sweelix', 'Sweelix tables'); ?></th>
+							<th colspan="3"><?php echo Yii::t('dashboard', 'Sweelix tables'); ?></th>
 						</tr>
 					</thead>
 					<tbody>
 						<?php foreach($tables as $name => $status): ?>
 						<?php echo Html::openTag('tr', array('class' => ($status?'success':'danger'))); ?>
-							<td><?php echo $status?Yii::t('DashboardModule.sweelix', 'OK'):Yii::t('sweelix', 'KO') ?></td>
-							<td><?php echo Yii::t('DashboardModule.sweelix', 'Table')?></td>
+							<td><?php echo $status?Yii::t('dashboard', 'OK'):Yii::t('dashboard', 'KO') ?></td>
+							<td><?php echo Yii::t('dashboard', 'Table')?></td>
 							<td><?php echo $name ?></td>
 						</tr>
 						<?php endforeach; ?>

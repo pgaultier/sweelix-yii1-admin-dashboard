@@ -13,7 +13,7 @@
  * @package   sweelix.yii1.admin.dashboard.controllers
  */
 
-namespace sweelix\yii1\admin\core\controllers;
+namespace sweelix\yii1\admin\dashboard\controllers;
 use sweelix\yii1\admin\core\web\Controller;
 use sweelix\yii1\ext\db\CriteriaBuilder;
 use sweelix\yii1\ext\entities\Node;
@@ -116,8 +116,8 @@ class DefaultController extends Controller {
 		if($cache !== null) {
 			$cache->flush();
 			$this->renderJs(Html::raiseEvent('showNotice', array(
-				'title' => \Yii::t('DashboardModule.sweelix', 'flush'),
-				'text' => \Yii::t('DashboardModule.sweelix', 'Cache was flushed successfully'),
+				'title' => \Yii::t('dashboard', 'flush'),
+				'text' => \Yii::t('dashboard', 'Cache was flushed successfully'),
 				'cssClass' => 'inverse'
 			)));
 		}
@@ -131,8 +131,8 @@ class DefaultController extends Controller {
 		\Yii::trace(__METHOD__.'()', 'sweelix.yii1.admin.dashboard.controllers');
 		\Yii::app()->getDb()->createCommand('CALL spFlushUrl()')->execute();
 		$this->renderJs(Html::raiseEvent('showNotice', array(
-			'title' => \Yii::t('DashboardModule.sweelix', 'flush'),
-			'text' => \Yii::t('DashboardModule.sweelix', 'URLs were flushed successfully'),
+			'title' => \Yii::t('dashboard', 'flush'),
+			'text' => \Yii::t('dashboard', 'URLs were flushed successfully'),
 			'cssClass' => 'inverse'
 		)));
 	}
@@ -162,8 +162,8 @@ class DefaultController extends Controller {
 			$element->save();
 		}
 		$this->renderJs(Html::raiseEvent('showNotice', array(
-				'title' => \Yii::t('DashboardModule.sweelix', 'flush'),
-				'text' => \Yii::t('DashboardModule.sweelix', 'Database was re-indexed successfully'),
+				'title' => \Yii::t('dashboard', 'flush'),
+				'text' => \Yii::t('dashboard', 'Database was re-indexed successfully'),
 				'cssClass' => 'inverse'
 		)));
 	}

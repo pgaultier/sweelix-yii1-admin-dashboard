@@ -15,6 +15,6 @@
 ?>
 <tr>
 	<td colspan="3">
-		<?php echo(Yii::t('DashboardModule.sweelix', 'Title'));?>
+		<?php echo(Yii::t('dashboard', 'Title'));?>
 	</td>
 </tr>

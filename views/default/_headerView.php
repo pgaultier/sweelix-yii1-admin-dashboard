@@ -16,12 +16,12 @@
 ?>
 <tr>
 	<th class="main-id">
-		<?php echo(Yii::t('DashboardModule.sweelix', 'Id'));?>
+		<?php echo(Yii::t('dashboard', 'Id'));?>
 	</th>
 	<th class="status">
-		<?php echo(Yii::t('DashboardModule.sweelix', 'Status'));?>
+		<?php echo(Yii::t('dashboard', 'Status'));?>
 	</th>
 	<th>
-		<?php echo(Yii::t('DashboardModule.sweelix', 'Title'));?>
+		<?php echo(Yii::t('dashboard', 'Title'));?>
 	</th>
 </tr>

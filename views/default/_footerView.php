@@ -15,6 +15,6 @@
 ?>
 <tr>
 	<th colspan="3">
-		<?php echo(Yii::t('DashboardModule.sweelix', $title, $widget->dataProvider->totalItemCount));?>
+		<?php echo(Yii::t('dashboard', $title, $widget->dataProvider->totalItemCount));?>
 	</th>
 </tr>

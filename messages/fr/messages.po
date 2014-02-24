@@ -1,0 +1,133 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sweelix - Dashboard\n"
+"POT-Creation-Date: 2014-02-24 11:41+0100\n"
+"PO-Revision-Date: 2014-02-24 11:51+0100\n"
+"Last-Translator: \n"
+"Language-Team: Sweelix <pgaultier@sweelix.net>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: t:1c,2\n"
+"X-Poedit-SearchPath-0: ../..\n"
+
+msgctxt "dashboard"
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+msgctxt "dashboard"
+msgid "{n} orphan|{n} orphans"
+msgstr "{n} orphelin|{n} orphelins"
+
+msgctxt "dashboard"
+msgid "End of life content|End of life contents"
+msgstr "Article en fin de vie|Articles en fin de vie"
+
+msgctxt "dashboard"
+msgid "Expired content|Expired contents"
+msgstr "Article expiré|Articles expirés"
+
+#: ../../controllers/DefaultController.php:119
+#: ../../controllers/DefaultController.php:134
+#: ../../controllers/DefaultController.php:165
+#: ../../views/default/index.php:78 ../../views/default/index.php:95
+#: ../../views/default/index.php:108
+msgctxt "dashboard"
+msgid "flush"
+msgstr "Rafraîchir"
+
+#: ../../controllers/DefaultController.php:120
+msgctxt "dashboard"
+msgid "Cache was flushed successfully"
+msgstr "Le cache a été purgé"
+
+#: ../../controllers/DefaultController.php:135
+msgctxt "dashboard"
+msgid "URLs were flushed successfully"
+msgstr "Les URLs ont été recalculées"
+
+#: ../../controllers/DefaultController.php:166
+msgctxt "dashboard"
+msgid "Database was re-indexed successfully"
+msgstr "La database a été dé-indexée"
+
+#: ../../views/default/_headerView.php:19
+msgctxt "dashboard"
+msgid "Id"
+msgstr "Id"
+
+#: ../../views/default/_headerView.php:22
+msgctxt "dashboard"
+msgid "Status"
+msgstr "Statut"
+
+#: ../../views/default/_headerView.php:25
+#: ../../views/default/_summaryView.php:18
+msgctxt "dashboard"
+msgid "Title"
+msgstr "Titre"
+
+#: ../../views/default/index.php:68
+msgctxt "dashboard"
+msgid "Special operations"
+msgstr "Opération sur le site"
+
+#: ../../views/default/index.php:74
+msgctxt "dashboard"
+msgid "Cache"
+msgstr "Cache"
+
+#: ../../views/default/index.php:85
+msgctxt "dashboard"
+msgid "Cache cannot be flushed"
+msgstr "Le cache ne peut être vidé"
+
+#: ../../views/default/index.php:91
+msgctxt "dashboard"
+msgid "URLs"
+msgstr "URLs"
+
+#: ../../views/default/index.php:101
+msgctxt "dashboard"
+msgid "URLs cannot be flushed"
+msgstr "Les URLs ne peuvent être recalculées"
+
+#: ../../views/default/index.php:105
+msgctxt "dashboard"
+msgid "Indexer"
+msgstr "Index"
+
+#: ../../views/default/index.php:121
+msgctxt "dashboard"
+msgid "Sweelix stored procedures"
+msgstr "Procédures stockées"
+
+#: ../../views/default/index.php:127 ../../views/default/index.php:145
+msgctxt "dashboard"
+msgid "OK"
+msgstr "OK"
+
+#: ../../views/default/index.php:127 ../../views/default/index.php:145
+msgctxt "dashboard"
+msgid "KO"
+msgstr "KO"
+
+#: ../../views/default/index.php:128
+msgctxt "dashboard"
+msgid "Proc"
+msgstr "Proc"
+
+#: ../../views/default/index.php:139
+msgctxt "dashboard"
+msgid "Sweelix tables"
+msgstr "Tables"
+
+#: ../../views/default/index.php:146
+msgctxt "dashboard"
+msgid "Table"
+msgstr "Table"

@@ -45,6 +45,12 @@ class Module extends BaseModule {
 	 */
 	protected function init() {
 		$this->basePath = __DIR__;
+		\Yii::app()->setComponents(array(
+			'messages' => array(
+				'class' => 'CGettextMessageSource',
+				'basePath' => $this->basePath.DIRECTORY_SEPARATOR.'messages',
+			),
+		));
 		parent::init();
 
 	}
