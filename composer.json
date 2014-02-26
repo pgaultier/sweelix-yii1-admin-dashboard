@@ -10,16 +10,10 @@
 	} ],
 	"require" : {
 		"php" : ">=5.4.0",
-		"yiisoft/yii" : "=1.1.14",
-		"sweelix/yii1" : "*",
-		"sweelix/yii1-cmsext" : "*",
 		"sweelix/yii1-admin-core" : "*"
 	},
 	"require-dev" : {
 		"php" : ">=5.4.0",
-		"yiisoft/yii" : "=1.1.14",
-		"sweelix/yii1" : "dev-devel",
-		"sweelix/yii1-cmsext" : "dev-devel",
 		"sweelix/yii1-admin-core" : "dev-devel"
 	},
 	"autoload" : {
