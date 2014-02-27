@@ -19,7 +19,7 @@ use sweelix\yii1\admin\core\components\BaseModule;
 /**
  * Class Module
  *
- * This module is the base container for all admin submodules
+ * This module handle the little dashboard
  * @see Module in components.
  *
  * @author    Philippe Gaultier <pgaultier@sweelix.net>
