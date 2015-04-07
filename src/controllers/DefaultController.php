@@ -69,12 +69,13 @@ class DefaultController extends Controller
             $route = null;
         }
 
+        $databaseStatus = $this->getDatabaseStatus();
         $this->render('index', array(
             'orphans' => $orphansBuilder->getActiveDataProvider(),
             'expired' => $expiredBuilder->getActiveDataProvider(),
             'dying' => $dyingBuilder->getActiveDataProvider(),
-            'tables' => $this->databaseStatus['tables'],
-            'procedures' => $this->databaseStatus['procedures'],
+            'tables' => $databaseStatus['tables'],
+            'procedures' => $databaseStatus['procedures'],
             'contentRoute' => $route,
         ));
     }
