@@ -1,6 +1,6 @@
 {
 	"name" : "sweelix/yii1-admin-dashboard",
-	"description" : "PHP 5.4+ Sweelix CMS  basic dashboard",
+	"description" : "PHP 5.3+ Sweelix CMS  basic dashboard",
 	"type" : "library",
 	"keywords" : [ "sweelix", "yii", "cms", "back office", "dashboard" ],
 	"license" : "BSD-3-Clause",
@@ -14,7 +14,7 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"sweelix\\yii1\\admin\\dashboard\\" : ""
+			"sweelix\\yii1\\admin\\dashboard\\" : "src"
 		}
 	}
 }

@@ -1,6 +1,7 @@
 ## 3.2.0
 
   - "downgrade" code to be 5.3 Compliant
+  - Move code into src folder
 
 ## 3.1.0
 
